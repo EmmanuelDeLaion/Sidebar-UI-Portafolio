@@ -1,0 +1,28 @@
+ .card-404 {
+     background-color: aliceblue;
+     padding: 3rem;
+     background-color: var(--content-bg);
+     border-radius: 14px;
+     border: 1px solid var(--theme-bg-color);
+     transition: 0.3s ease;
+     margin: 1px;
+     &:hover {
+         transform: scale(1.02);
+         background-color: var(--theme-bg-color);
+     }
+ }
+ 
+ h1,
+ h2,
+ p {
+     color: #fff;
+ }
+ 
+ h1 {
+     font-size: 5rem;
+     font-weight: bold;
+ }
+ 
+ p {
+     font-size: 14px;
+ }
