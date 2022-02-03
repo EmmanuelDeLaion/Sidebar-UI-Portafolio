@@ -1,0 +1,92 @@
+<div class="video-bg">
+    <video width="320" height="240" autoplay loop muted>
+<source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+<div class="dark-light">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+</svg>
+</div>
+
+<div class="app">
+
+    <div class="header">
+        <div class="menu-circle"></div>
+        <div class="header-menu">
+            <a class="menu-link is-active" href="#">Apps</a>
+            <a class="menu-link notify" href="#">Your work</a>
+            <a class="menu-link" href="#">Discover</a>
+            <a class="menu-link notify" href="#">Market</a>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="header-profile">
+            <div class="notification">
+                <span class="notification-number">1</span>
+                <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+  <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
+</svg>
+            </div>
+
+            <img class="profile-img" src="https://scontent.frex1-1.fna.fbcdn.net/v/t1.6435-9/36627150_1027414267428172_7736275383397384192_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHLuCwTVUl9H2FWF_U0mo1jUZxsY2u4sI9RnGxja7iwj5aCv90Q9aOgIdZLWSj5atQiTpHXbaMMmaVhqwv7cDzD&_nc_ohc=3r4kdLGE_VkAX-TjEuy&_nc_ht=scontent.frex1-1.fna&oh=00_AT8YnQ94qSXDLh7mJCl5uJiwRSz8AygJMufIhv0MHiS6pQ&oe=62148731"
+                alt="">
+        </div>
+
+    </div>
+
+
+
+    <div class="wrapper">
+        <div class="left-side">
+
+
+            <div class="side-wrapper">
+                <div class="side-title">Proyectos</div>
+                <div class="side-menu">
+                    <a [routerLink]="['aplicacion-peliculas']">
+                        <i class="fas fa-film"></i>Peliculas App
+                    </a>
+
+                    <a [routerLink]="['gifs']">
+                        <i class="fas fa-film"></i>Gifs App
+                    </a>
+
+                    <a [routerLink]="['empleados']">
+                        <i class="fas fa-film"></i>Empleados App
+                    </a>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="side-wrapper">
+                <div class="side-title">Redes sociales</div>
+                <div class="side-menu">
+                    <a href="https://www.linkedin.com/in/emmanuel-de-leon/" target="_blanck">
+                        <i class="fab fa-linkedin-in"></i>LinkedIn
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+
+            <div class="content-wrapper">
+                <router-outlet></router-outlet>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="overlay-app"></div>
+</div>

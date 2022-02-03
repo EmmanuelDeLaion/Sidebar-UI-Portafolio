@@ -1,0 +1,13 @@
+.nav-peliculas {
+    padding: 10px 10px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    background-color: var(--content-bg);
+    border: 1px solid var(--theme-bg-color);
+    color: var(--content-title-color);
+    .content-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
