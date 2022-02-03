@@ -5,12 +5,16 @@ $(function() {
     });
 });
 
+
+
 $(function() {
     $(".main-header-link").click(function() {
         $(".main-header-link").removeClass("is-active");
         $(this).addClass("is-active");
     });
 });
+
+
 
 const dropdowns = document.querySelectorAll(".dropdown");
 dropdowns.forEach((dropdown) => {
@@ -21,6 +25,8 @@ dropdowns.forEach((dropdown) => {
     });
 });
 
+
+
 $(".search-bar input")
     .focus(function() {
         $(".header").addClass("wide");
@@ -29,6 +35,8 @@ $(".search-bar input")
         $(".header").removeClass("wide");
     });
 
+
+
 $(document).click(function(e) {
     var container = $(".status-button");
     var dd = $(".dropdown");
@@ -36,6 +44,8 @@ $(document).click(function(e) {
         dd.removeClass("is-active");
     }
 });
+
+
 
 $(function() {
     $(".dropdown").on("click", function(e) {
@@ -49,6 +59,8 @@ $(function() {
     });
 });
 
+
+
 $(function() {
     $(".status-button:not(.open)").on("click", function(e) {
         $(".overlay-app").addClass("is-active");
@@ -58,16 +70,22 @@ $(function() {
     });
 });
 
+
+
 $(".status-button:not(.open)").click(function() {
     $(".pop-up").addClass("visible");
 });
+
+
 
 $(".pop-up .close").click(function() {
     $(".pop-up").removeClass("visible");
 });
 
-const toggleButton = document.querySelector('.dark-light');
 
+
+
+const toggleButton = document.querySelector('.dark-light');
 toggleButton.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
 
