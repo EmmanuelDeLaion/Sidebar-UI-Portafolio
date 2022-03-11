@@ -1,0 +1,13 @@
+.carousel {
+    width: 70%;
+}
+
+.carousel-item {
+    height: 350px;
+    img {
+        background-size: cover;
+    }
+    .carousel-caption {
+        background: rgb(0, 0, 0, 40%);
+    }
+}

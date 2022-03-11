@@ -1,0 +1,17 @@
+<div class="row mb-4">
+    <div class="col-3" *ngFor="let movie of movies">
+
+        <div class="content-img">
+            <img class="img-fluid poster" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="Imagen de la pelicula {{movie.title}}">
+        </div>
+
+        <p class="mt-1">{{movie.title}}</p>
+        <div class="d-flex justify-content-between">
+
+            <ngb-rating [rate]="3"></ngb-rating>
+
+
+            <p class="fs-4">{{movie.vote_average | number: '1.1-2'}}</p>
+        </div>
+    </div>
+</div>

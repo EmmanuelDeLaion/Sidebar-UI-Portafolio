@@ -12,21 +12,10 @@ export class AppComponent implements OnInit{
   myElementScript: HTMLScriptElement;
   title = 'DASHBOARD-UI';
 
-  constructor(private peliculasService: PeliculasService){
-
-
+  constructor(){
     this.myElementScript = document.createElement("script");
     this.myElementScript.src = "/assets/js/dashboard-home.js";
     document.body.appendChild(this.myElementScript);
-
-
-    this.peliculasService.getCartelera().subscribe(
-      res => {
-        console.log(res);
-      }
-    )
-
-
 
   }
 

@@ -1,9 +1,11 @@
 // MODULOS
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { HttpClientModule } from '@angular/common/http';
+
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 
 // RUTAS
 import { RUTAS_PRINCIPALES } from './app.routes';
@@ -28,7 +30,6 @@ import { ComponentsModule } from './components/components.module';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,10 +48,17 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     RouterModule.forRoot(RUTAS_PRINCIPALES, { useHash:true}),
     HttpClientModule,
-    ComponentsModule
+    ComponentsModule,
+    NgbPaginationModule, NgbAlertModule
 
   ],
+  exports:[],
+
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
+
 })
 export class AppModule { }

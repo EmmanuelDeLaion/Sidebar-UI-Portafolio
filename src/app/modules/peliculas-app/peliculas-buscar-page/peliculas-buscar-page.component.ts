@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Movie } from 'src/app/interfaces/cartelera-response';
 
 @Component({
   selector: 'app-peliculas-buscar-page',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./peliculas-buscar-page.component.scss']
 })
 export class PeliculasBuscarPageComponent implements OnInit {
+
+
 
   constructor() { }
 
